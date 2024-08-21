@@ -43,7 +43,7 @@ export class AuthService{
         return null
     }
 
-    async logOut (){
+    async logout (){
         try {
             // return await this.account.deleteSession('current' or 'session_Id') //delete the current session
             return await this.account.deleteSessions() //logout from all devices
